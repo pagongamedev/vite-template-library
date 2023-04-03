@@ -1,0 +1,38 @@
+{
+  "name": "vite-template-library-ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "module": "./dist/vite-template-library-ts.js",
+  "main": "./dist/vite-template-library-ts.umd.cjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vite-template-library-ts.js",
+      "require": "./dist/vite-template-library-ts.umd.cjs"
+    }
+  },
+  "engines": {
+    "npm": "please-use-pnpm",
+    "node": ">=19.0.0 <20.0.0",
+    "pnpm": ">=8.0.0 <9.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite --host",
+    "tsc": "tsc --watch",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "rollup-plugin-visualizer": "^5.9.0",
+    "typescript": "^5.0.3",
+    "vite": "^4.2.1",
+    "vite-plugin-dts": "^2.2.0"
+  }
+}
